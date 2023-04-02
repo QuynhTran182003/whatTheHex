@@ -2,11 +2,11 @@ const DIFFICULTY = [2, 3, 4, 5, 6, 7, 8, 9, 10, 48];
 
 function renderColorsListDiv(colorsList) {
 	const colorsListDiv = document.querySelector('.colorsList');
-	colorsListDiv.innerHTML = colorsList
-		.map((color) => {
-			return `<div class='color' style='background-color: #${color}'>#${color}</div>`;
-		})
-		.join('');
+		colorsListDiv.innerHTML = colorsList
+			.map((color) => {
+				return `<div class='color' style='background-color: #${color}'>#${color}</div>`;
+			})
+			.join('');
 }
 
 function getRandHex(count) {
